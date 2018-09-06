@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Exams</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<table border="1">
+		<tr th:each="exam : ${exams}">
+			<td th:text="${ exam.id }"></td>
+			<td th:text="${ exam.subject }"></td>
+			<td th:text="${ exam.price }"></td>
+			<td th:text="${ exam.durations }"></td>
+		</tr>
+	</table>
+</body>
+</html>
